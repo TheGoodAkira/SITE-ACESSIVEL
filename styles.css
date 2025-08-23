@@ -1,105 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap');
 
 :root {
-  --vitoriano-dourado: #c0a060;
-  --vitoriano-vinho: #3b1f2b;
-  --vitoriano-bege: #f5f0e6;
-  --vitoriano-preto: #1a1a1a;
+    --vitoriano-dourado: #c0a060;
+    --vitoriano-vinho: #3b1f2b;
+    --vitoriano-bege: #f5f0e6;
+    --vitoriano-preto: #1a1a1a;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
-  font-size: 1rem;
-  font-family: 'Playfair Display', serif;
-  background-color: var(--vitoriano-bege);
-  color: var(--vitoriano-preto);
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    background-color: var(--vitoriano-bege);
+    color: var(--vitoriano-preto);
 }
 
 header {
-  background-color: var(--vitoriano-vinho);
-  border-bottom: 4px solid var(--vitoriano-dourado);
+    background-color: var(--vitoriano-vinho);
+    border-bottom: 4px solid var(--vitoriano-dourado);
 }
 
 .nav-link {
-  color: var(--vitoriano-dourado);
-  font-weight: 600;
-  font-family: 'Cinzel', serif;
+    color: var(--vitoriano-dourado);
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
 }
 
 .nav-link:hover {
-  color: white;
-  text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
 
 .inicio-fundo {
-  background-image: url('img/fundo-papel-vitoriano.jpg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 40px;
-  width: 100%;
-  height: 606px;
-  padding: 40px;
-  margin: 0 auto;
-  position: relative;
+    background-image: url('img/fundo-papel-vitoriano.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .esquerda-conteudo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  background: rgba(27, 17, 17, 0.7);
-  padding: 2rem;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(27, 17, 17, 0.7);
+    padding: 2rem;
+    border-radius: 15px;
 }
 
 .botao-inicio {
-  background-color: var(--vitoriano-dourado);
-  color: var(--vitoriano-preto);
-  border-radius: 30px;
-  border: none;
-  width: 14em;
-  height: 3em;
+    background-color: var(--vitoriano-dourado);
+    color: var(--vitoriano-preto);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
 }
 
 .display-4 {
-  text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
-  font-family: 'Cinzel', serif;
-  font-size: 2.5em;
-  color: var(--vitoriano-vinho);
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    color: var(--vitoriano-vinho);
 }
 
 #galeria {
-  background-color: #e9dfd3;
-  border-top: 4px solid var(--vitoriano-dourado);
-  border-bottom: 4px solid var(--vitoriano-dourado);
+    background-color: #e9dfd3;
+    border-top: 4px solid var(--vitoriano-dourado);
+    border-bottom: 4px solid var(--vitoriano-dourado);
 }
 
 .formulario {
-  background-color: var(--vitoriano-bege);
-  padding: 2rem;
-  border-radius: 15px;
-  border: 2px solid var(--vitoriano-dourado);
-  background-image: url('img/fundo-formulario-vitoriano.jpg');
-  background-size: cover;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
+    background-color: var(--vitoriano-bege);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .formulario button {
-  background-color: var(--vitoriano-vinho);
-  border: none;
-  color: white;
+    background-color: var(--vitoriano-vinho);
+    color: var(--vitoriano-dourado);
+    border: none;
 }
 
 .form-control {
-  background-color: #fdfaf6;
-  border: 1px solid var(--vitoriano-dourado);
+    background-color: #fdf8f2;
 }
 
-footer {
-  background-color: var(--vitoriano-vinho);
-  color: var(--vitoriano-dourado);
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
 }

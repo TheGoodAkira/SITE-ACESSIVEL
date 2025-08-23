@@ -31,7 +31,7 @@ header {
 }
 
 .inicio-fundo {
-  background-image: url('img/papel-parede-vitoriano.jpg');
+  background-image: url('img/fundo-papel-vitoriano.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 40px;
@@ -82,6 +82,8 @@ h2 {
   padding: 2rem;
   border-radius: 15px;
   border: 2px solid var(--vitoriano-dourado);
+  background-image: url('img/fundo-formulario-vitoriano.jpg');
+  background-size: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   font-weight: bold;
 }

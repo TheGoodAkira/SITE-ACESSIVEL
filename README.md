@@ -1,15 +1,21 @@
-## Site acessível sobre A Era Vitoriana
+# Site acessível sobre a Era Vitoriana
+
 ## Sobre
-Refatoração de um site implementando recursos de acessibilidade no html, css e JS.
+Este projeto é um site informativo sobre a Era Vitoriana, refatorado para implementar **recursos de acessibilidade** em HTML, CSS e JavaScript. O objetivo é criar uma experiência inclusiva para todos os usuários, incluindo pessoas com deficiência visual.
 
 ## Recursos de acessibilidade
-- Atributos aria
-- alt
-- tab-index
-- menu de acessibilidade
+O site inclui:
+
+- **Atributos ARIA** para melhorar a navegação por leitores de tela.
+- **Alt** em todas as imagens, descrevendo conteúdo visual.
+- **Tab-index** para navegação por teclado.
+- **Menu de acessibilidade** com:
+  - Aumentar/diminuir fonte
+  - Alternar contraste de cores
+
 ## Tecnologias utilizadas
-- Bootstrap
-- ScrollRevealjs
-- HTML
-- CSS
-- JS
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap 5**
+- **ScrollReveal.js** (para animações de scroll)
